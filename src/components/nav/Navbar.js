@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ curPage, setCurPage }) => {
   return (
     <aside
-      className="md:w:1/3  w-2/3  lg:w-maxNav bg-zinc-900 h-full z-max hidden lg:block  sticky top-0"
+      className="md:w:1/3  w-2/3  lg:w-maxNav bg-zinc-900 h-screen z-max hidden lg:block  sticky top-0"
       aria-label="Sidebar"
     >
       <div className="h-full flex  flex-col ">

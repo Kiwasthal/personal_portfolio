@@ -30,7 +30,7 @@ const dropLeft = {
 const MenuNav = ({ curPage, setCurPage }) => {
   return (
     <motion.aside
-      className="absolute  w-1/2 left-0 top-0 md:w:1/12 sm:w-2/6  lg:w-maxNav bg-zinc-900 h-full z-max  opacity-100"
+      className="absolute  w-1/2 left-0 top-0 md:w:1/12 sm:w-2/6  lg:w-maxNav bg-zinc-900 h-screen z-max  opacity-100"
       aria-label="Sidebar"
       {...dropLeft}
     >

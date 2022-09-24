@@ -2,7 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const AnimPKHead = ({ text, premier, timeout, roate }) => {
+const AnimPKHead = ({ text, premier, timeout }) => {
   const flipView = {
     hidden: {
       rotate: 360,

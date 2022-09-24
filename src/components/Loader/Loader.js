@@ -53,8 +53,8 @@ const Loader = () => {
     >
       <h1
         className=" lg:ml-0 box-border relative text-4xl font-loader text-zinc-700  strokeHandler uppercase tracking-wider 
-                      before:content-['Loading...'] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:text-rose-600 
-                      before:strokeHandler before:border-r-4 before:border-r-rose-600 py-2  before:py-2 before:overflow-hidden before:filltext"
+                    before:content-['Loading...'] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:text-rose-600 
+                    before:strokeHandler before:border-r-4 before:border-r-rose-600 py-2  before:py-2 before:overflow-hidden before:filltext"
       >
         Loading...
       </h1>

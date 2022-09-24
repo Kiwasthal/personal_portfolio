@@ -89,13 +89,13 @@ module.exports = {
         secspacer1: '960/300',
       },
       backgroundImage: {
-        spacer1: 'url(/homespacer.svg)',
-        spacer2: 'url(/steps3.svg)',
-        secspacer1: 'url(/sectionspacer1.svg)',
-        secspacer2: 'url(/sectionspacer2.svg)',
+        spacer1: 'url(./components/assets/spacers/homespacer.svg)',
+        spacer2: 'url(./components/assets/spacers/steps3.svg)',
+        secspacer1: 'url(./components/assets/spacers/sectionspacer1.svg)',
+        secspacer2: 'url(./components/assets/spacers/sectionspacer2.svg)',
         map: 'url(./components/assets/grimg.png)',
         homemap: 'url(./components/assets/homemap.png)',
-        contactspacer: 'url(/contactspacer.svg)',
+        contactspacer: 'url(./components/assets/spacers/contactspacer.svg)',
       },
       backgroundPosition: {
         'top-4': 'top right -10rem',

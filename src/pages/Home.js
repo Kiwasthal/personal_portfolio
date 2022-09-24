@@ -27,7 +27,7 @@ const Home = () => {
         description="Portfolio Home page,author Kiwasthal, layout page"
       />
 
-      <Parallax pages={8}>
+      <Parallax pages={7}>
         <AboutSection
           inView={inView}
           titleRef={skillTitleRef}
@@ -43,10 +43,10 @@ const Home = () => {
         <ParallaxLayer
           offset={6}
           speed={0.4}
-          className="flex flex-col justify-end"
+          className="flex flex-col justify-start"
         >
-          <div className="  h-[50%] w-screen bottom-0 bg-contactspacer bg-no-repeat aspect-mdspacer1 bg-cover bg-center  z-0"></div>
-          <div className=" h-[50%] w-screen bottom-0 bg-contactspacer bg-no-repeat aspect-mdspacer1 bg-cover bg-center  z-0 rotate-180"></div>
+          <div className="h-[50%] w-screen bottom-0 bg-contactspacer bg-no-repeat aspect-mdspacer1 bg-cover bg-center  z-0"></div>
+          <div className="h-[50%] w-screen bottom-0 bg-contactspacer bg-no-repeat aspect-mdspacer1 bg-cover bg-center  z-0 rotate-180"></div>
         </ParallaxLayer>
         <ContactSection />
       </Parallax>

@@ -3,7 +3,6 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
-import SubmitBtn from './SubmitBtn';
 
 const borderVariants = {
   hidden: {
@@ -31,13 +30,19 @@ const validationSchema = Yup.object({
   message: Yup.string().required('Write your message'),
 });
 
-const FormBox = ({ message, setMessage }) => {
+const FormBox = ({ message, setMessage, inViewRef, inView }) => {
   const controls = useAnimation();
+
   useEffect(() => {
-    setTimeout(() => {
-      controls.start('visible');
-    }, 3000);
-  }, [controls]);
+    if (!inViewRef)
+      setTimeout(() => {
+        controls.start('visible');
+      }, 3000);
+    if (inView)
+      setTimeout(() => {
+        controls.start('visible');
+      }, 500);
+  }, [controls, inView, inViewRef]);
 
   const SendEmail = async (values, { setSubmitting, resetForm }) => {
     if (!message) {
@@ -74,7 +79,10 @@ const FormBox = ({ message, setMessage }) => {
       >
         {({ isSubmitting }) => (
           <Form>
-            <div className=" absolute bg-zinc-900 inset-xs z-20 rounded-lg px-12 py-10 flex flex-col">
+            <div
+              className=" absolute bg-zinc-900 inset-xs z-20 rounded-lg px-12 py-10 flex flex-col"
+              ref={inViewRef}
+            >
               <h2 className="text-rose-500 font-bold font-logo text-center tracking-wider text-3xl mb-5">
                 Contact Me
               </h2>

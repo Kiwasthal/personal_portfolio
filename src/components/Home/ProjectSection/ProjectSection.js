@@ -105,8 +105,8 @@ const ProjectSection = () => {
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={5} speed={0.5}></ParallaxLayer>
-      <ParallaxLayer offset={5}>
-        <h1 className="absolute bottom-4 right-0 mr-32 text-5xl text-white z-20">
+      <ParallaxLayer offset={5} speed={0.2}>
+        <h1 className="absolute bottom-24 right-0 mr-32 text-5xl text-white z-20">
           Browse all{' '}
           <Link to="/works">
             <span className="text-rose-500 underline">Projects</span>
