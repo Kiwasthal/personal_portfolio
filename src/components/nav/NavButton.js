@@ -33,7 +33,7 @@ const NavButton = ({ text, curPage, setCurPage }) => {
   }, [location, controls, text]);
   return (
     <motion.span
-      className="relative inline-block w-40  lg:w-36 md:w-40 sm:w-32 h-12 shadow-lg font-extrabold cursor-pointer"
+      className="relative inline-block w-40 2xl:w-32 2xl:h-10 lg:w-36 md:w-40 sm:w-32 h-12 shadow-lg font-extrabold cursor-pointer"
       variants={buttonVariables}
       animate={controls}
       initial="standard"

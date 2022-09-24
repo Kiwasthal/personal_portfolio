@@ -15,16 +15,19 @@ const BattleshipSphere = () => {
 
   return (
     <div className="h-[50vh] flex items-center justify-center pb-12 pr-16">
-      <div className="  group relative w-72 h-72  hover:w-[500px] rounded-2xl transition-all duration-500 delay-0 ">
+      <div className="group relative 2xl:w-82 2xl:h-82   w-72 h-72  2xl:hover:w-[600px] hover:w-[500px] rounded-2xl transition-all duration-500 delay-0 ">
         <motion.div
           className="absolute flex items-center justify-center m-6 top-0 left-0 w-full h-full rounded-2xl overflow-hidden
-  before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-neutral-700 before:clipCon before:transition-all before:duration-500
-  group-hover:before:clipConHov "
+                    before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-neutral-700 before:clipCon before:transition-all before:duration-500
+                    group-hover:before:clipConHov "
           ref={ref}
           variants={sphereVariants}
           animate={controls}
         >
-          <span className="relative  w-44 text-center text-4xl text-white font-logo rotate-350 transition-all sclae-1 duration-500 delay-0 group-hover:transition-all group-hover:scale-0 group-hover:delay-0 ">
+          <span
+            className="relative  w-44 text-center text-4xl text-white font-logo rotate-350 
+                          transition-all sclae-1 duration-500 delay-0 group-hover:transition-all group-hover:scale-0 group-hover:delay-0 "
+          >
             Battleship
           </span>
         </motion.div>
