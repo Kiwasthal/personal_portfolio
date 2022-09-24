@@ -30,12 +30,12 @@ const dropLeft = {
 const MenuNav = ({ curPage, setCurPage }) => {
   return (
     <motion.aside
-      className="absolute  w-1/2 left-0 top-0 md:w:1/12 sm:w-2/6  lg:w-maxNav bg-zinc-900 h-screen z-max  opacity-100"
+      className="absolute  w-1/2 left-0 top-0 md:w:1/12 sm:w-2/6  lg:w-maxNav bg-zinc-900 h-screen z-max  opacity-100 "
       aria-label="Sidebar"
       {...dropLeft}
     >
       <div className="h-full flex  flex-col ">
-        <div className=" flex flex-col  justify-center items-center text-white bg-stone-900  lg:py-16 py-10">
+        <div className=" flex flex-col  justify-center items-center text-white bg-stone-900  lg:py-16  py-10">
           <span className="logoShadow tracking-widest  md:text-8xl sm:text-8xl text-8xl font-logo  flex items-center ">
             PK
           </span>

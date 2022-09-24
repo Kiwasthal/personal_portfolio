@@ -6,21 +6,21 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ curPage, setCurPage }) => {
   return (
     <aside
-      className="md:w:1/3  w-2/3  lg:w-maxNav bg-zinc-900 h-screen z-max hidden lg:block  sticky top-0"
+      className="md:w:1/3  w-2/3  lg:w-maxNav bg-zinc-900 h-screen z-max hidden lg:block  sticky top-0 "
       aria-label="Sidebar"
     >
       <div className="h-full flex  flex-col ">
-        <div className=" flex flex-col items-center justify-center  text-white bg-stone-900  lg:py-16 py-12">
+        <div className=" flex flex-col items-center justify-center  text-white bg-stone-900  lg:py-20 py-12">
           <Link to="/">
             <span className="logoShadow tracking-widest lg:text-8xl text-7xl font-logo  flex items-center  ">
               PK
             </span>
           </Link>
-          <span className="text-gray-300  text-xss    flex items-center ">
+          <span className="text-gray-300  text-xss    flex items-center  ">
             WEB DEVELOPER
           </span>
         </div>
-        <section className="flex flex-col gap-5 items-center py-9">
+        <section className="flex flex-col gap-5 items-center pt-14 pb-12">
           <Link to="about">
             <NavButton text="about" curPage={curPage} setCurPage={setCurPage} />
           </Link>

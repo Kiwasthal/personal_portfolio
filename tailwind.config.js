@@ -12,8 +12,8 @@ module.exports = {
     extend: {
       width: {
         wfit: '250px',
-        maxNav: '11.5%',
-        maxPage: '88.5%',
+        maxNav: '10%',
+        maxPage: '90%',
         xxxl: '10em',
         xxl: '9em',
         82: '21rem',
