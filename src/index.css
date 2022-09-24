@@ -1,13 +1,267 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #3f3f46;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1c1917;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+  .logoShadow {
+    background-color: #e11d48;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: #fff1f2 3px -5px 0px;
+  }
+
+  .logoShadowsm {
+    background-color: #e11d48;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: #fff1f2 2px -4px 0px;
+  }
+
+  .pureTxtShadow {
+    background-color: white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: #e11d48 2px -2px 0px;
+  }
+
+  .clip-control {
+    clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 53%);
+  }
+  .clip-control:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+  }
+  .clip-alter:hover ~ .clip-control {
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 50%);
+  }
+
+  .goo {
+    filter: url(#gooey);
+  }
+
+  .sdroser {
+    box-shadow: 0 0 30px #581c87;
+  }
+
+  .spinner-st {
+    @apply absolute top-0 left-0 w-full h-full block before:absolute before:top-0 before:w-10 before:h-10  before:bg-gradient-to-tr before:rounded-3xl before:from-rose-400 before:to-rose-900 before:shadow-xl;
+  }
+
+  .social-icon {
+    @apply overflow-hidden relative sm:w-20 sm:h-20 w-16 h-16 lg:w-14  lg:h-14 md:w-20 md:h-20 rounded-lg flex items-center justify-center text-white text-2xl duration-500 hover:translate-x-3 before:absolute before:top-0 before:left-0 before:w-8 before:h-full;
+  }
+
+  .rotate {
+    animation: animate 4s ease-in-out infinite;
+  }
+  .rotate1 {
+    animation-delay: -0.2s;
+  }
+  .rotate2 {
+    animation-delay: -0.4s;
+  }
+  .rotate3 {
+    animation-delay: -0.6s;
+  }
+  .rotate4 {
+    animation-delay: -0.8s;
+  }
+  .rotate5 {
+    animation-delay: -1s;
+  }
+  .rotateLoad {
+    animation: animate 16s linear infinite;
+  }
+
+  /* Loader */
+  .strokeHandler {
+    -webkit-text-stroke: 2px #e11d48;
+  }
+
+  .filltext {
+    animation: filltext 3s linear infinite;
+  }
+
+  .text-10xl {
+    font-size: 9rem;
+    line-height: 1;
+  }
+
+  .text-xss {
+    line-height: 1rem;
+    font-size: 0.65rem;
+  }
+
+  @keyframes filltext {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* Form classes */
+
+  .animateBorder {
+    animation: borderanimation 6s linear infinite;
+  }
+
+  .delayanim {
+    animation-delay: -3s;
+  }
+
+  @keyframes borderanimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* //Form // */
+
+  .form-input {
+    @apply focus:outline-none  h-full w-full relative  pt-5 pb-3 px-3 bg-transparent text-stone-900 text-lg tracking-wider z-20;
+  }
+
+  .trd {
+    transition: 0.5s;
+  }
+
+  .form-label {
+    @apply absolute left-0 bottom-0 pt-5 pr-3 py-3 text-lg text-label pointer-events-none tracking-wider duration-500 peer-valid:text-rose-500 peer-focus:text-rose-500;
+  }
+
+  .swiper-icon {
+    @apply md:text-7xl lg:text-9xl border-2 lg:p-12 md:p-9 bg-zinc-900;
+  }
+
+  .custom-slide {
+    @apply flex items-center justify-center lg:p-2 p-2;
+  }
+
+  .formBtnB {
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+
+  .formBtnB:hover {
+    transition: transform 0.5s;
+    tranform-origin: top left;
+    transform: scale(1);
+  }
+
+  /* --Works-- */
+  .clipCon {
+    clip-path: circle(120px at center);
+  }
+
+  .clipConHov {
+    clip-path: circle(450px at center);
+  }
+
+  /* ---Test Image--- */
+
+  .secholder {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+  }
+
+  .secholder h2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 10vw;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100vh;
+  }
+
+  @keyframes drop {
+    0% {
+      transform: translateZ(2000px);
+    }
+    100% {
+      transform: translateZ(0px);
+    }
+  }
+  .mailSent {
+    animation: loading 3.7s forwards cubic-bezier(0, 0, 0, 0);
+  }
+
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .animate-shadow {
+    animation: shadow 1.5s linear infinite;
+  }
+
+  @keyframes shadow {
+    0% {
+      transform: scale(1) skew(15deg, 15deg) rotate(60deg);
+      width: 18px;
+    }
+    50% {
+      transform: scale(0.75) skew(15deg, 15deg) rotate(60deg);
+      width: 12px;
+    }
+    100% {
+      transform: scale(1) skew(15deg, 15deg) rotate(60deg);
+      width: 18px;
+    }
+  }
 }
