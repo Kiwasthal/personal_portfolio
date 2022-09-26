@@ -10,14 +10,14 @@ const Navbar = ({ curPage, setCurPage }) => {
       aria-label="Sidebar"
     >
       <div className="h-full flex  flex-col ">
-        <div className=" flex flex-col items-center justify-center  text-white bg-stone-900  lg:py-20 2xl:py-8 py-12">
+        <div className=" flex flex-col items-center justify-center  text-white bg-stone-900  lg:py-8 2xl:py-12 py-12">
           <Link to="/">
-            <span className="logoShadow tracking-widest lg:text-8xl text-7xl font-logo 2xl:text-7xl flex items-center  ">
+            <span className="logoShadow tracking-widest text-7xl 2xl:text-7xl lg:text-5xl  font-logo  flex items-center  ">
               PK
             </span>
           </Link>
           <span
-            className="text-gray-300  text-xss 
+            className="text-gray-300  text-xss lg:text-[0.4rem]
                       2xl:text-[0.4rem] flex items-center "
           >
             WEB DEVELOPER

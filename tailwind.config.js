@@ -96,6 +96,7 @@ module.exports = {
         map: 'url(./components/assets/grimg.png)',
         homemap: 'url(./components/assets/homemap.png)',
         contactspacer: 'url(./components/assets/spacers/contactspacer.svg)',
+        workbg: 'url(./components/assets/spacers/workbg.svg)',
       },
       backgroundPosition: {
         'top-4': 'top right -10rem',

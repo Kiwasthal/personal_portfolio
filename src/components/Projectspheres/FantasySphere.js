@@ -14,8 +14,8 @@ const FantasySphere = () => {
   }, [inView, controls]);
 
   return (
-    <div className="h-[50vh] flex items-center justify-center pb-12 pr-16">
-      <div className="  group relative w-72 h-72  hover:w-[500px] rounded-2xl transition-all duration-500 delay-0 ">
+    <div className="group sphere-container">
+      <div className="group relative w-72 h-72 md:hover:3/4  hover:w-full rounded-2xl transition-all duration-500 delay-0 ">
         <motion.div
           className="absolute flex items-center justify-center m-6 top-0 left-0 w-full h-full rounded-2xl overflow-hidden
   before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-stone-900 before:clipCon before:transition-all before:duration-500

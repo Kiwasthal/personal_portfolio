@@ -13,25 +13,30 @@ import ShoppingSphere from './ShoppingSphere';
 import CvSphere from './CvSphere';
 import BattleshipSphere from './Battleshipshpere';
 import MemorySphere from './MemorySphere';
+import SwiperContent from './SwiperContent';
+import { topspheresConfig } from './SphereConfigs';
+import SphereGenerator from './SphereTemplate';
 
 const SwiperContainer = () => {
   return (
     <>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
+        className="h-5/6 "
         spaceBetween={0}
-        slidesPerView={3}
+        slidesPerView={1}
         breakpoints={{
           640: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
+
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 1,
+            spaceBetween: -110,
+          },
+          1280: {
+            slidesPerView: 2,
             spaceBetween: -110,
           },
         }}
@@ -40,66 +45,11 @@ const SwiperContainer = () => {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
-        <SwiperSlide>
-          <BlogSphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <FantasySphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <HeronSphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <WaldoSphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ShoppingSphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <MemorySphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CvSphere />
-        </SwiperSlide>
-      </Swiper>
-      <Swiper
-        className="sm:justify-start"
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={0}
-        slidesPerView={3}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: -110,
-          },
-        }}
-        speed={600}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={swiper => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
-      >
-        <SwiperSlide>
-          <BattleshipSphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <BlogSphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <BlogSphere />
-        </SwiperSlide>
-        <SwiperSlide>
-          <BlogSphere />
-        </SwiperSlide>
+        {topspheresConfig.map(sphere => (
+          <SwiperSlide className="custom-slide">
+            <SphereGenerator sphere={sphere} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
