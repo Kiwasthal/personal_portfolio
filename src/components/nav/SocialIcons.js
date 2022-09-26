@@ -17,7 +17,7 @@ const SocialIcons = () => {
             href="1"
             className="social-icon border-iconW border-r-iconRB border-b-iconRB rounded-lg backdrop-blur-xs before:bg-socialCol before:skew-x-45 before:translate-x-24 md:before:translate-x-28 sm:before:translate-x-32 before:duration-500  hover:before:translate-x-[-96px]"
           >
-            <FontAwesomeIcon icon={faLinkedinIn} />
+            <FontAwesomeIcon icon={faLinkedinIn} className="lg:h-5 xl:h-6" />
           </a>
         </li>
         <li className="relative m-2 ">
@@ -27,7 +27,7 @@ const SocialIcons = () => {
             rel="noopener noreferrer"
             className="social-icon border-iconW border-r-iconRB border-b-iconRB rounded-lg backdrop-blur-xs before:bg-socialCol before:skew-x-45 before:translate-x-24 md:before:translate-x-28 sm:before:translate-x-32 before:duration-500  hover:before:translate-x-[-96px]"
           >
-            <FontAwesomeIcon icon={faGithubAlt} />
+            <FontAwesomeIcon icon={faGithubAlt} className="lg:h-5 xl:h-6" />
           </a>
         </li>
         <li className="relative m-2">
@@ -37,7 +37,7 @@ const SocialIcons = () => {
             rel="noopener noreferrer"
             className="social-icon border-iconW border-r-iconRB border-b-iconRB rounded-lg backdrop-blur-xs before:bg-socialCol before:skew-x-45 before:translate-x-24 md:before:translate-x-28 sm:before:translate-x-32 before:duration-500  hover:before:translate-x-[-96px]"
           >
-            <FontAwesomeIcon icon={faFacebookF} />
+            <FontAwesomeIcon icon={faFacebookF} className="lg:h-5 xl:h-6" />
           </a>
         </li>
       </ul>

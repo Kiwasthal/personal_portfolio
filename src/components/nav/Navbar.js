@@ -10,9 +10,9 @@ const Navbar = ({ curPage, setCurPage }) => {
       aria-label="Sidebar"
     >
       <div className="h-full flex  flex-col ">
-        <div className=" flex flex-col items-center justify-center  text-white bg-stone-900  lg:py-8 2xl:py-12 py-12">
+        <div className=" flex flex-col items-center justify-center  text-white bg-stone-900  2xl:py-12 xl:py-10 lg:py-8  py-12">
           <Link to="/">
-            <span className="logoShadow tracking-widest text-7xl 2xl:text-7xl lg:text-5xl  font-logo  flex items-center  ">
+            <span className="logoShadow tracking-widest text-7xl 2xl:text-7xl xl:text-6xl lg:text-5xl  font-logo  flex items-center  ">
               PK
             </span>
           </Link>
@@ -23,7 +23,7 @@ const Navbar = ({ curPage, setCurPage }) => {
             WEB DEVELOPER
           </span>
         </div>
-        <section className="flex flex-col gap-5 items-center pt-14 pb-12">
+        <section className="flex flex-col gap-5 items-center xl:py-10 lg:py-16 pb-10">
           <Link to="about">
             <NavButton text="about" curPage={curPage} setCurPage={setCurPage} />
           </Link>

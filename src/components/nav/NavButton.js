@@ -33,16 +33,16 @@ const NavButton = ({ text, curPage, setCurPage }) => {
   }, [location, controls, text]);
   return (
     <motion.span
-      className="relative inline-block w-40 2xl:w-32 2xl:h-10 lg:w-36 md:w-40 sm:w-32 h-12 shadow-lg font-extrabold cursor-pointer"
+      className="relative inline-block  2xl:w-32 xl:w-24 2xl:h-10 xl:h-8 lg:w-20 lg:h-6 md:w-40 sm:w-32 h-12 shadow-lg font-extrabold cursor-pointer"
       variants={buttonVariables}
       animate={controls}
       initial="standard"
       onClick={() => setCurPage(text)}
     >
-      <span className="lg:text-xl  absolute top-0 w-full h-full text-white bg-rose-600 flex justify-center items-center uppercase space tracking-wider clip-alter">
+      <span className="lg:text-sm xl:text-base 2xl:text-lg absolute top-0 w-full h-full text-white bg-rose-600 flex justify-center items-center uppercase space tracking-wider clip-alter">
         {text}
       </span>
-      <span className="lg:text-xl   absolute top-0 w-full h-full text-rose-600 flex justify-center items-center uppercase space tracking-wider backgr bg-white overflow-hidden z-10 duration-500 clip-control">
+      <span className="text-sm xl:text-base 2xl:text-lg  absolute top-0 w-full h-full text-rose-600 flex justify-center items-center uppercase space tracking-wider backgr bg-white overflow-hidden z-10 duration-500 clip-control">
         {text}
       </span>
     </motion.span>
