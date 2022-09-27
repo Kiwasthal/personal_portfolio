@@ -6,7 +6,6 @@ import { useInView } from 'react-intersection-observer';
 import { useRef } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import SEO from '../components/SEO';
-import FormBox from '../components/Form/FormBox';
 import ContactSection from '../components/Home/ContactSection/ContactSection';
 
 const Home = () => {

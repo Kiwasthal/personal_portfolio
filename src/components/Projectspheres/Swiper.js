@@ -30,7 +30,6 @@ const SwiperContainer = () => {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-
           1024: {
             slidesPerView: 1,
             spaceBetween: -110,

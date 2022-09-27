@@ -166,7 +166,7 @@
   /* //Form // */
 
   .form-input {
-    @apply focus:outline-none  h-full w-full relative  pt-5 pb-3 px-3 bg-transparent text-stone-900 text-lg tracking-wider z-20;
+    @apply focus:outline-none  h-full w-full relative  pt-5 pb-2 md:pb-3 px-3 bg-transparent text-stone-900 text-sm md:text-lg tracking-wider z-20;
   }
 
   .trd {
@@ -174,7 +174,7 @@
   }
 
   .form-label {
-    @apply absolute left-0 bottom-0 pt-5 pr-3 py-3 text-lg text-label pointer-events-none tracking-wider duration-500 peer-valid:text-rose-500 peer-focus:text-rose-500;
+    @apply absolute left-0 bottom-0 pt-5 pr-3 py-3 text-sm md:text-lg text-label pointer-events-none tracking-wider duration-500 peer-valid:text-rose-500 peer-focus:text-rose-500;
   }
 
   .swiper-icon {
@@ -276,7 +276,7 @@
   }
 
   .sphere-container {
-    @apply relative w-72 h-72 lg:hover:w-5/6 hover:w-4/6 rounded-2xl transition-all duration-500 delay-0;
+    @apply relative  w-72 h-72 lg:hover:w-full hover:w-full md:hover:w-4/6 rounded-2xl transition-all duration-500 delay-0;
   }
 
   .sphere-handler {

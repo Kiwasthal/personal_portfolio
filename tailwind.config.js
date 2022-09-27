@@ -97,6 +97,7 @@ module.exports = {
         homemap: 'url(./components/assets/homemap.png)',
         contactspacer: 'url(./components/assets/spacers/contactspacer.svg)',
         workbg: 'url(./components/assets/spacers/workbg.svg)',
+        formbg: 'url(./components/assets/spacers/contactbg.svg)',
       },
       backgroundPosition: {
         'top-4': 'top right -10rem',

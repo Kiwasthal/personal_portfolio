@@ -54,7 +54,7 @@ const BattleshipSphere = () => {
         </div>
         <img
           src={battleshipGIF}
-          alt="Battleship webb aplication gif."
+          alt="Battleship webb application gif."
           className="absolute rounded-md top-[60%] left-[77%] w-60 translate-x-[-50%] translate-y-[-50%] scale-1 h-96 transition-all scale-0 duration-500 group-hover:transition-all group-hover:transform group-hover:translate-x-[-50%] group-hover:duration-500 group-hover:translate-y-[-50%] group-hover:scale-100"
         />
       </div>

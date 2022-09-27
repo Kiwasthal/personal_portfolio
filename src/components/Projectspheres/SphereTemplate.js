@@ -29,10 +29,10 @@ const SphereGenerator = ({ sphere }) => {
         </motion.div>
         <div className="sphere-content">
           <h2 className={`font-bold text-2xl leading-4 ${sphere.header}`}>
-            Battleship Game
+            {sphere.innerTitle}
           </h2>
           <span className={`sphere-tools ${sphere.tools}`}>
-            Vanilla Javascript
+            {sphere.toolContent}
           </span>
           <p className={`sphere-para ${sphere.paraStyles}`}>{sphere.para}</p>
           <a
@@ -48,7 +48,7 @@ const SphereGenerator = ({ sphere }) => {
           src={sphere.src}
           alt={sphere.desc}
           className="absolute rounded-md top-[60%] left-[77%] 
-                  w-60 translate-x-[-50%] translate-y-[-50%] 
+                  w-1/2 md:w-60 translate-x-[-50%] translate-y-[-50%] 
                   scale-1 h-[125%] transition-all scale-0 duration-500 
                   group-hover:transition-all group-hover:transform 
                   group-hover:translate-x-[-50%] group-hover:duration-500 
