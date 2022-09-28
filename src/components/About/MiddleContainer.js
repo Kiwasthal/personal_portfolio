@@ -1,5 +1,5 @@
 import promo50 from '../assets/promo.jpg';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import AnimPKHead from './AnimPKHead';
 
 const flip = {
@@ -42,6 +42,8 @@ const mainTxtVariants = {
 };
 
 const MiddleContainer = () => {
+  const controls = useAnimation();
+
   return (
     <div className="w-full left-[50%] top-[50%] absolute translate-x-[-50%] translate-y-[-50%]  z-10 flex flex-col justify-between gap-12">
       <div className="w-full flex justify-center lmg:pl-32 textlg:pl-0 md:pl-0 pl-14">
@@ -102,7 +104,8 @@ const MiddleContainer = () => {
           alt="potrait of myslef"
           variants={flip}
           initial="hidden"
-          animate="visible"
+          onLoad={() => controls.start('visible')}
+          animate={controls}
         ></motion.img>
       </div>
     </div>
