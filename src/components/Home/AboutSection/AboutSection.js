@@ -12,14 +12,14 @@ const AboutSection = ({ inView, scroll }) => {
   return (
     <ParallaxLayer>
       <section className="relative h-screen flex flex-col justify-center">
-        <div className="absolute w-full translate-y-[-30%] lg:ml-5 ml-0 text-xl text-white flex flex-col items-start md:items-center cursor-none">
+        <div className="absolute w-full translate-y-[-30%] lg:ml-5 ml-0 text-xl text-white flex flex-col items-center cursor-none gap-5 md:gap-0">
           <AnimTxt
             text={`Hello, I'm Panos`}
             premier={['P', 'K']}
             timeout={3000}
           />
           <AnimTxt text={`Kostopoulos`} premier={['P', 'K']} timeout={3200} />
-          <span className="mt-12 ml-3 text-2xl text-red-100 cursor-default">
+          <span className="mt-5 sm:mt-12 ml-3 md:text-2xl text-sm text-red-100 cursor-default">
             <em>Full-Stack Web Developer</em>{' '}
           </span>
         </div>

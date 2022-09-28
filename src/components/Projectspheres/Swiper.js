@@ -5,17 +5,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './custom.css';
 
-import BlogSphere from './BlogSphere';
-import FantasySphere from './FantasySphere';
-import HeronSphere from './HeronSphere';
-import WaldoSphere from './WaldoSphere';
-import ShoppingSphere from './ShoppingSphere';
-import CvSphere from './CvSphere';
-import BattleshipSphere from './Battleshipshpere';
-import MemorySphere from './MemorySphere';
-import SwiperContent from './SwiperContent';
 import { topspheresConfig } from './SphereConfigs';
-import SphereGenerator from './SphereTemplate';
+import SphereGenerator from './SphereGenerator';
 
 const SwiperContainer = () => {
   return (
@@ -34,7 +25,7 @@ const SwiperContainer = () => {
             slidesPerView: 1,
             spaceBetween: -110,
           },
-          1280: {
+          1536: {
             slidesPerView: 2,
             spaceBetween: -110,
           },
@@ -45,8 +36,8 @@ const SwiperContainer = () => {
         scrollbar={{ draggable: true }}
       >
         {topspheresConfig.map(sphere => (
-          <SwiperSlide className="custom-slide">
-            <SphereGenerator sphere={sphere} />
+          <SwiperSlide key={sphere.id} className="custom-slide">
+            <SphereGenerator sphere={sphere} multiple={sphere.multiple} />
           </SwiperSlide>
         ))}
       </Swiper>

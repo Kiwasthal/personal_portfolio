@@ -85,7 +85,7 @@ const AnimTxt = ({ text, premier, timeout, roate }) => {
                 return (
                   <motion.span
                     key={index}
-                    className={`inline-block  text-white logoShadow lg:text-9xl md:text-8xl  text-5xl cursor-pointer lg:mr-[-12px] md:mr-[-7px] font-logo`}
+                    className={`inline-block  text-white logoShadow lg:text-9xl md:text-8xl sm:text-6xl text-5xl cursor-pointer lg:mr-[-12px] md:mr-[-7px] font-logo`}
                     aria-hidden="true"
                     variants={flipView}
                     custom={custom}
@@ -101,7 +101,7 @@ const AnimTxt = ({ text, premier, timeout, roate }) => {
               return (
                 <motion.span
                   key={index}
-                  className={`lg:text-8xl md:text-6xl text-5xl  inline-block mr-negLetter text-rose-500 cursor-pointer pureTxtShadow`}
+                  className={`lg:text-8xl md:text-6xl text-3xl sm:text-5xl  inline-block mr-negLetter text-rose-500 cursor-pointer pureTxtShadow`}
                   aria-hidden="true"
                   variants={characterAnimation}
                   whileHover={{

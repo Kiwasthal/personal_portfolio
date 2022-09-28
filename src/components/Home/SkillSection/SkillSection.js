@@ -37,7 +37,7 @@ const SkillSection = ({ inView, skillTitleRef, scrollRef }) => {
 
   return (
     <ParallaxLayer offset={1} factor={0.2}>
-      <div className="top-0 bg-secspacer2 w-full bg-no-repeat bg-cover bg-center aspect-secspacer1"></div>
+      <div className="top-0 bg-secspacer2 w-full bg-no-repeat bg-cover bg-center aspect-square sm:aspect-secspacer1"></div>
 
       <section
         className="flex flex-col items-center h-screen md:translate-y-[10px] lg:translate-y-[-42px]"

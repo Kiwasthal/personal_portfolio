@@ -203,6 +203,10 @@
     clip-path: circle(130px at center);
   }
 
+  .smClipCon {
+    clip-path: circle(90px at center);
+  }
+
   .clipConHov {
     clip-path: circle(450px at center);
   }
@@ -276,32 +280,32 @@
   }
 
   .sphere-container {
-    @apply relative  w-72 h-72 lg:hover:w-full hover:w-full md:hover:w-4/6 rounded-2xl transition-all duration-500 delay-0;
+    @apply relative w-52 h-52  md:w-72 md:h-3/5 lg:hover:w-5/6 hover:w-11/12 md:hover:w-5/6 rounded-2xl transition-all duration-500 delay-0;
   }
 
   .sphere-handler {
-    @apply absolute flex items-center justify-center m-6 top-0 left-0 w-full h-full rounded-2xl overflow-hidden
-    before:absolute before:top-0 before:left-0 before:w-full before:h-full before:clipCon before:transition-all before:duration-500
+    @apply absolute flex items-center justify-center  top-0 left-0 w-full h-full rounded-2xl overflow-hidden
+    before:absolute before:top-0 before:left-0 before:w-full before:h-full before:smClipCon   md:before:clipCon before:transition-all before:duration-500
     group-hover:before:clipConHov;
   }
 
   .sphere-name {
-    @apply relative w-44 text-center font-logo rotate-350 transition-all scale-100 duration-500 delay-0 group-hover:transition-all group-hover:scale-0 group-hover:delay-0;
+    @apply relative w-44 text-center font-logo rotate-350 transition-all scale-75 md:scale-100 duration-500 delay-0 group-hover:transition-all group-hover:scale-0 group-hover:delay-0;
   }
 
   .sphere-content {
-    @apply w-1/2 h-full relative left-[30%] pt-9 pr-3 pb-3 pl-12 opacity-0 transition-all  invisible group-hover:left-0 group-hover:opacity-100 group-hover:visible group-hover:transition-all group-hover:delay-500;
+    @apply flex flex-col justify-evenly w-1/2 h-full relative left-[30%] pt-2 md:pt-6 pr-3 pb-3 pl-4 md:pl-8 opacity-0 transition-all  invisible group-hover:left-0 group-hover:opacity-100 group-hover:visible group-hover:transition-all group-hover:delay-500;
   }
 
   .sphere-tools {
-    @apply font-bold leading-3 text-sm;
+    @apply font-bold leading-3;
   }
 
   .sphere-para {
-    @apply font-bold mb-4 mt-1 leading-5;
+    @apply font-bold mb-4 mt-1;
   }
 
   .sphere-button {
-    @apply text-lg font-bold relative px-4 py-2 inline-block rounded-md;
+    @apply w-[45%] flex items-center justify-center md:w-1/3 text-xs md:text-lg font-bold relative px-2 md:px-4 py-1 md:py-2 rounded-md;
   }
 }
