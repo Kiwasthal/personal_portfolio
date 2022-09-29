@@ -98,6 +98,8 @@ module.exports = {
         contactspacer: 'url(./components/assets/spacers/contactspacer.svg)',
         workbg: 'url(./components/assets/spacers/workbg.svg)',
         formbg: 'url(./components/assets/spacers/contactbg.svg)',
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        // 'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
       },
       backgroundPosition: {
         'top-4': 'top right -10rem',

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-const default_domain = 'https://kiwasthal-portfolio';
+const default_domain = 'https://panagiotis-kostopoulos.netlify.app/';
 
 const SEO = ({
   title,

@@ -178,7 +178,9 @@
   }
 
   .swiper-icon {
-    @apply md:text-7xl lg:text-9xl border-2 lg:p-12 md:p-9 bg-zinc-900;
+    @apply 2xl:text-9xl 2xl:p-11
+    xl:text-8xl xl:p-9 lg:text-7xl lg:p-7 border-2
+    md:text-7xl md:p-5  sm:text-7xl sm:p-8 text-4xl p-4 bg-zinc-900;
   }
 
   .custom-slide {
@@ -277,6 +279,10 @@
 
   .custom-slide {
     @apply flex items-center justify-center pb-12;
+  }
+
+  .skills-slide {
+    @apply flex items-center justify-center;
   }
 
   .sphere-container {

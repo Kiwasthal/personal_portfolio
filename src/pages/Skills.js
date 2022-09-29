@@ -22,6 +22,7 @@ const Skills = () => {
       <SEO
         title={'Skills'}
         description={'Porfolio skills page, list of my skills'}
+        domain="https://panagiotis-kostopoulos.netlify.app/skills"
       ></SEO>
 
       <div className="lg:w-full lg:h-full h-screen w-screen  lg:flex   overflow-hidden relative">

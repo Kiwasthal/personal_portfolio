@@ -13,13 +13,17 @@ const SwiperContainer = () => {
     <>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        className="h-5/6 "
+        className="lg:h-5/6 h-full z-max "
         spaceBetween={0}
         slidesPerView={1}
         breakpoints={{
+          340: {
+            slidesPerView: 1,
+            spaceBetween: -150,
+          },
           640: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: -150,
           },
           1024: {
             slidesPerView: 1,

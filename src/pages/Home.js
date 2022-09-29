@@ -24,6 +24,7 @@ const Home = () => {
       <SEO
         title="Home"
         description="Portfolio Home page,author Kiwasthal, layout page"
+        domain="https://panagiotis-kostopoulos.netlify.app/home"
       />
 
       <Parallax pages={7}>

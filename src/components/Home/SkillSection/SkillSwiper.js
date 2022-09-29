@@ -13,13 +13,13 @@ const SkillSwiper = () => {
       centeredSlides={true}
       modules={[Navigation, Scrollbar, A11y, Pagination]}
       spaceBetween={0}
-      slidesPerView={5}
+      slidesPerView={3}
       slidesPerGroup={1}
       loop={true}
       breakpoints={{
         540: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
+          slidesPerView: 3,
+          slidesPerGroup: 1,
           spaceBetween: 0,
         },
         768: {
@@ -30,7 +30,7 @@ const SkillSwiper = () => {
         },
         808: {
           slidesPerView: 5,
-          slidesPerGroup: 5,
+          slidesPerGroup: 3,
           spaceBetween: 0,
           loopFillGroupWithBlank: true,
         },
@@ -48,77 +48,77 @@ const SkillSwiper = () => {
         clickable: true,
       }}
     >
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'React'}>
           <i className="devicon-react-original colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'Redux'}>
           <i className="devicon-redux-original colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'NextJS'}>
           <i className="devicon-nextjs-original colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'JavaScript'}>
           <i className="devicon-javascript-plain colored swiper-icon "></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'TypeScript'}>
           <i className="devicon-typescript-plain colored swiper-icon "></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'HTML5'}>
           <i className="devicon-html5-plain-wordmark colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'CSS3'}>
           <i className="devicon-css3-plain-wordmark colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'Tailwindcss'}>
           <i className="devicon-tailwindcss-plain colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'Express'}>
           <i className="devicon-express-original colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'MongoDB'}>
           <i className="devicon-mongodb-plain-wordmark colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'Webpack'}>
           <i className="devicon-webpack-plain colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'Jest'}>
           <i className="devicon-jest-plain colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'Git'}>
           <i className="devicon-git-plain-wordmark colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'Firebase'}>
           <i className="devicon-firebase-plain-wordmark colored swiper-icon"></i>
         </IconHolder>
       </SwiperSlide>
-      <SwiperSlide className="custom-slide">
+      <SwiperSlide className="skills-slide">
         <IconHolder text={'NodeJS'}>
           <i className="devicon-nodejs-plain-wordmark colored swiper-icon"></i>
         </IconHolder>

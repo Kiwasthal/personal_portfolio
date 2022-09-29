@@ -24,6 +24,7 @@ const About = () => {
       <SEO
         title="About"
         description="Porfolio page about author Kiwasthal(Steerpike)-Panos Kostopoulos, relevant information"
+        domain="https://panagiotis-kostopoulos.netlify.app/about"
       />
 
       <section className="h-full w-screen lg:w-full flex-col items-end justify-end  relative">

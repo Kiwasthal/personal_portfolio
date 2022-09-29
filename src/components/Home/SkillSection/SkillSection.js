@@ -37,14 +37,14 @@ const SkillSection = ({ inView, skillTitleRef, scrollRef }) => {
 
   return (
     <ParallaxLayer offset={1} factor={0.2}>
-      <div className="top-0 bg-secspacer2 w-full bg-no-repeat bg-cover bg-center aspect-square sm:aspect-secspacer1"></div>
+      <div className="z-max top-0 bg-secspacer2 w-full bg-no-repeat bg-cover bg-center aspect-square sm:aspect-secspacer1"></div>
 
       <section
-        className="flex flex-col items-center h-screen md:translate-y-[10px] lg:translate-y-[-42px]"
+        className="flex flex-col items-center h-screen translate-y-[30%] md:translate-y-[30%] lg:translate-y-[-42px]"
         ref={skillTitleRef}
       >
         <motion.h1
-          className="text-5xl text-white "
+          className="text-xl -mb-28 sm:mb-0 xl:text-7xl md:text-5xl text-white "
           variants={titleVariants}
           initial="hidden"
           animate={controls}

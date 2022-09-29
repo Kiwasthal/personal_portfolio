@@ -34,6 +34,7 @@ function Contact() {
       <SEO
         title="Contact"
         description="Porfolio contact page, contact kiwasthal via email"
+        domain="https://panagiotis-kostopoulos.netlify.app/contact"
       />
 
       <div className="h-full w-screen lg:w-full flex  items-center justify-center md:gap-4 gap-2 relative">

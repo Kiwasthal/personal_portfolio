@@ -6,6 +6,7 @@ const ErrorPage = () => {
       <SEO
         title={'Error404'}
         description="Portfolio error page, navigation Error"
+        domain="https://panagiotis-kostopoulos.netlify.app"
       />
 
       <section className="h-full w-screen lg:w-full flex-col items-end justify-end  relative">
