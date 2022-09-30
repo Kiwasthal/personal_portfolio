@@ -25,16 +25,16 @@ const Skills = () => {
         domain="https://panagiotis-kostopoulos.netlify.app/skills"
       ></SEO>
 
-      <div className="lg:w-full lg:h-full h-screen w-screen  lg:flex   overflow-hidden relative">
+      <div className="lg:w-full lg:h-full h-screen w-screen lg:flex overflow-hidden relative">
         <motion.div
-          className=" absolute  sm:h-[120vh] w-screen h-[120vh] md:h-[120vh] lg:w-[120vw] md:w-screen lg:h-screen  lg:mt-0"
+          className=" absolute mt-40 sm:mt-0  sm:h-[120vh] w-screen h-[80vh] md:h-[120vh] lg:w-[120vw] md:w-screen lg:h-screen  lg:mt-0"
           variants={TagcloudContainer}
           initial="hidden"
           animate="visible"
         >
-          <TagSphere className={''} maxSpeed={3} fullHeight={true} />
+          <TagSphere className={'w-20%'} maxSpeed={3} fullHeight={true} />
         </motion.div>
-        <div className="lg:w-2/3 w-screen sm:pt-32 lg:pl-16 lg:pt-0 pt-16 pl-4 flex lg:flex-col  justify-center gap-[-10em]">
+        <div className="lg:w-2/3 w-screen sm:pt-4 lg:pl-16 lg:pt-0 pt-16 pl-4 flex flex-col items-center lg:items-start justify-center gap-[-10em]">
           <AnimatedText
             premier={['W', 'D', 'S']}
             text={`Web`}

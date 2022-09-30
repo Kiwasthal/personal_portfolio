@@ -84,8 +84,8 @@ const AnimatedText = ({ text, premier, timeout, maxTxt, flipP, gBot }) => {
                     key={index}
                     className={
                       char === 'W' && maxTxt
-                        ? `inline-block  text-white logoShadow lg:text-10xl md:text-8xl text-6xl cursor-pointer lg:mr-[-12px] md:mr-[-7px]`
-                        : `inline-block  text-white logoShadow lg:text-10xl md:text-8xl text-6xl cursor-pointer mr-negLetter `
+                        ? `inline-block  text-white logoShadow lg:text-10xl md:text-8xl sm:text-6xl text-4xl cursor-pointer lg:mr-[-12px] md:mr-[-7px]`
+                        : `inline-block  text-white logoShadow lg:text-10xl md:text-8xl sm:text-6xl text-4xl cursor-pointer mr-negLetter `
                     }
                     aria-hidden="true"
                     variants={flipP ? flip : characterAnimation}
@@ -101,7 +101,7 @@ const AnimatedText = ({ text, premier, timeout, maxTxt, flipP, gBot }) => {
               return (
                 <motion.span
                   key={index}
-                  className={`lg:text-8xl md:text-6xl text-5xl  inline-block mr-negLetter text-rose-500 cursor-pointer pureTxtShadow`}
+                  className={`lg:text-8xl md:text-6xl text-2xl  inline-block mr-negLetter text-rose-500 cursor-pointer pureTxtShadow`}
                   aria-hidden="true"
                   variants={characterAnimation}
                   whileHover={{
