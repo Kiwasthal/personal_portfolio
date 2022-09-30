@@ -203,6 +203,7 @@
   /* --Works-- */
   .clipCon {
     clip-path: circle(130px at center);
+    box-shadow: 200px 200px 30px 0px black;
   }
 
   .smClipCon {

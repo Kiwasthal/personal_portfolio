@@ -39,14 +39,14 @@ const SphereGenerator = ({ sphere, multiple }) => {
   }, [inView, controls]);
 
   return (
-    <div className="group sphere-container">
+    <div className="group sphere-container z-10 relative">
       <motion.div
-        className={`sphere-handler ${sphere.mainColor}`}
+        className={`sphere-handler   ${sphere.mainColor}`}
         ref={ref}
         variants={sphereVariants}
         animate={controls}
       >
-        <span className={`sphere-name ${sphere.name}`}>
+        <span className={`sphere-name  ${sphere.name}`}>
           {sphere.originName}
         </span>
       </motion.div>
