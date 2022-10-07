@@ -3,7 +3,7 @@ import SocialIcons from './SocialIcons';
 import ThemeButton from './ThemeButton';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ curPage, setCurPage }) => {
+const Navbar = () => {
   return (
     <aside
       className="md:w:1/3  w-2/3  lg:w-maxNav bg-zinc-900 h-screen z-max hidden lg:block   "
@@ -25,24 +25,16 @@ const Navbar = ({ curPage, setCurPage }) => {
         </div>
         <section className="flex flex-col gap-5 items-center xl:py-10 lg:py-16 pb-10">
           <Link to="about">
-            <NavButton text="about" curPage={curPage} setCurPage={setCurPage} />
+            <NavButton text="about" />
           </Link>
           <Link to="skills">
-            <NavButton
-              text="skills"
-              curPage={curPage}
-              setCurPage={setCurPage}
-            />
+            <NavButton text="skills" />
           </Link>
           <Link to="works">
-            <NavButton text="works" curPage={curPage} setCurPage={setCurPage} />
+            <NavButton text="works" />
           </Link>
           <Link to="contact">
-            <NavButton
-              text="contact"
-              curPage={curPage}
-              setCurPage={setCurPage}
-            />
+            <NavButton text="contact" />
           </Link>
         </section>
         <SocialIcons />

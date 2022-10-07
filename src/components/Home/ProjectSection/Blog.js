@@ -1,5 +1,7 @@
 import blogVideo from '../../assets/videos/blogPort.mp4';
 import { ParallaxLayer } from '@react-spring/parallax';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from 'react-intersection-observer';
 
 let visibleShadow =
@@ -32,7 +34,7 @@ const Blog = () => {
 
       <ParallaxLayer offset={3} speed={0.2}>
         <div className={endInView ? modalShow : modalHide}>
-          <div className="flex flex-col lg:flex-row justify-between items-start">
+          <div className="flex flex-col lg:flex-row justify-between items-start ">
             <h3 className="text-xl md:text-4xl text-rose-500 lg:text-white font-bold">
               Kiwasthal Blog
             </h3>
@@ -44,13 +46,11 @@ const Blog = () => {
             </div>
           </div>
           <p className="md:text-black lg:text-white mt-5 text-[0.5rem] sm:text-base leading-2 lg:text-base xl:text-xl 2xl:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            A Blog Application in three parts. The API is created with ExpressJS
+            with MongoDB connection with passport authentications, deployed on
+            heroku. The client is managed by NextJS && react hooks. A cms is
+            deployed in GHpages for admin users to update the client's content.
+            Users can sign-up or login to like posts or create comments.
           </p>
         </div>
       </ParallaxLayer>

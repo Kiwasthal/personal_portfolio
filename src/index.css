@@ -80,7 +80,7 @@
   }
 
   .social-icon {
-    @apply overflow-hidden relative 2xl:h-12 2xl:w-12 xl:w-12 xl:h-12 lg:h-10 lg:w-10 rounded-lg flex items-center justify-center text-white text-2xl duration-500 hover:translate-x-3 before:absolute before:top-0 before:left-0 before:w-8 before:h-full;
+    @apply overflow-hidden relative 2xl:h-12 2xl:w-12 xl:w-12 xl:h-12 lg:h-10 lg:w-10 h-10 w-10 rounded-lg flex items-center justify-center text-white text-2xl duration-500 hover:translate-x-3 before:absolute before:top-0 before:left-0 before:w-8 before:h-full;
   }
 
   .rotate {

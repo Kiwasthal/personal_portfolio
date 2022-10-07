@@ -53,7 +53,6 @@ const dropBottom = {
 };
 
 const Backdrop = ({ children, isShowing, clickHandler }) => {
-  console.log(isShowing);
   return (
     <AnimatePresence initial={false} mode="wait">
       {!isShowing && (

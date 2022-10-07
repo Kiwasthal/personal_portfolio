@@ -41,13 +41,11 @@ const Fantasy = () => {
             </div>
           </div>
           <p className="md:text-black lg:text-white mt-5 text-[0.5rem] sm:text-base leading-2 lg:text-base xl:text-xl 2xl:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            An application designer to catalogue different creatures. Users can
+            start by creating a family or a specific origin of a creature then
+            proceed to add specific details about any fantastical creature ever
+            imagined. The content of the page is render with EJS via an Back end
+            view engine. The Server was created with express and Mongoose.
           </p>
         </div>
       </ParallaxLayer>

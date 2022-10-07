@@ -35,15 +35,17 @@ const MenuNav = ({ curPage, setCurPage }) => {
       {...dropLeft}
     >
       <div className="h-full flex  flex-col ">
-        <div className=" flex flex-col  justify-center items-center text-white bg-stone-900  lg:py-16  py-10">
-          <span className="logoShadow tracking-widest  md:text-8xl sm:text-8xl text-8xl font-logo  flex items-center ">
-            PK
-          </span>
+        <div className=" flex flex-col  justify-center items-center text-white bg-stone-900  lg:py-16  py-8 sm:py-10">
+          <Link to="/">
+            <span className="logoShadow tracking-widest  md:text-8xl sm:text-8xl text-7xl font-logo  flex items-center ">
+              PK
+            </span>
+          </Link>
           <span className="text-gray-300  text-xss    flex items-center ">
             WEB DEVELOPER
           </span>
         </div>
-        <section className="flex flex-col gap-5 items-center py-10">
+        <section className="flex flex-col gap-5 items-center py-7 sm:py-10">
           <Link to="about">
             <NavButton text="about" curPage={curPage} setCurPage={setCurPage} />
           </Link>
@@ -66,7 +68,7 @@ const MenuNav = ({ curPage, setCurPage }) => {
           </Link>
         </section>
         <SocialIcons />
-        <section className="flex flex-col  justify-center items-center h-full">
+        <section className="hidden md:flex flex-col  justify-center items-center h-full">
           <ThemeButton />
         </section>
       </div>

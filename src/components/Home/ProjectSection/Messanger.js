@@ -33,7 +33,7 @@ const Messanger = () => {
         <div className={endInView ? modalShow : modalHide}>
           <div className="flex flex-col lg:flex-row justify-between items-start">
             <h3 className="text-xl md:text-4xl text-rose-500 lg:text-white font-bold">
-              Heron Messanger
+              Heron Messenger
             </h3>
             <div className="flex items-center  gap-5">
               <i className="devicon-redux-original colored text-3xl"></i>
@@ -42,13 +42,10 @@ const Messanger = () => {
             </div>
           </div>
           <p className="md:text-black lg:text-white mt-5 text-[0.5rem] sm:text-base leading-2 lg:text-base xl:text-xl 2xl:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            A real-time messenger application built with firebase, redux and
+            typescript. Users can login manually or via their google account,
+            they can add friends and join private chatrooms to have a chat, or
+            they can post messanges on the global section.
           </p>
         </div>
       </ParallaxLayer>

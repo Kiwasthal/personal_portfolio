@@ -20,7 +20,6 @@ const successVariants = {
 const SuccessMsg = ({ message, setMessage }) => {
   const controls = useAnimation();
   const [hasMounted, setHasMounted] = useState(false);
-  console.log(message);
 
   useEffect(() => {
     if (message) {

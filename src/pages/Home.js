@@ -40,11 +40,7 @@ const Home = () => {
         />
         <TopProjectSpacer />
         <ProjectSection />
-        <ParallaxLayer
-          offset={6}
-          speed={0.4}
-          className="flex flex-col justify-start"
-        >
+        <ParallaxLayer offset={6} speed={0.4}>
           <div className="h-[50%] w-screen bottom-0 bg-contactspacer bg-no-repeat aspect-mdspacer1 bg-cover bg-center  z-0"></div>
           <div className="h-[50%] w-screen bottom-0 bg-contactspacer bg-no-repeat aspect-mdspacer1 bg-cover bg-center  z-0 rotate-180"></div>
         </ParallaxLayer>
